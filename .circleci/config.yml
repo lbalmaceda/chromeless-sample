@@ -4,7 +4,9 @@ jobs:
     docker:
       - image: circleci/node:9.5-browsers
     steps:
+      # Check out the project
       - checkout
+      # Install dependencies or retrieve them from cache
       - restore_cache:
           keys:
             - npm-cache-{{ checksum "package-lock.json" }}
@@ -13,7 +15,11 @@ jobs:
           key: npm-cache-{{ checksum "package-lock.json" }}
           paths:
             - node_modules
+      # Create 'out' folder to store test results
+      - run: mkdir out
+      # Run tests
       - run: node test.js
+      # Store results
       - store_artifacts:
           path: out
           destination: test-results
