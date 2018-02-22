@@ -1,3 +1,4 @@
+[![CircleCI](https://circleci.com/gh/lbalmaceda/chromeless-sample/tree/master.svg?style=svg)](https://circleci.com/gh/lbalmaceda/chromeless-sample/tree/master)
 
 # Chromeless On CircleCI
 
