@@ -1,10 +1,10 @@
 {
-  "name": "chromeless",
+  "name": "sample-puppeteer",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "chromeless": "^1.5.0"
+    "puppeteer": "^1.1.0"
   },
   "devDependencies": {},
   "scripts": {
@@ -12,5 +12,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "MIT"
 }
